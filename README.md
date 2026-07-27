@@ -101,6 +101,7 @@ deviseを利用する。
 
 ```mermaid
 erDiagram
+    direction LR
     users ||--o{ items : "出品する"
     users ||--o{ purchase_records : "購入する"
     items ||--o| purchase_records : "購入される"
