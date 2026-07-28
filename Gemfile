@@ -41,12 +41,24 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
+# Flexible authentication solution for Rails
+gem "devise"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
 
   # Use mysql as the database for Active Record in development/test
   gem "mysql2", "~> 0.5"
+
+  # Behaviour-driven testing framework
+  gem "rspec-rails"
+
+  # Fixtures replacement for tests
+  gem "factory_bot_rails"
+
+  # Generate fake data for tests
+  gem "faker"
 end
 
 group :development do
